@@ -24,9 +24,14 @@ const main = async () => {
       {
         type: 'input',
         name: 'qtty',
-        message: 'How many pictures?',
+        message: 'How many pictures (max. 400)?',
         default: () => 200,
-        validate: (val) => Number.isInteger(+val),
+        validate: (val) => {
+          if (Number.isInteger(+val)) {
+            if (+val <= 400) return true;
+          }
+          return false;
+        },
       },
     ]);
 

@@ -16,6 +16,8 @@ Just run `googledl` in terminal, and follow the instructions.
 
 After entering parameters, it will launch Chrome browser and make the search in Google Images, then will download the required number of images to the selected `basefolder/subfolder`. The number of images downloaded might be less than required, as app will download only jpg files.
 
+Remember that there is a hard limit of 400 images in google image search results.
+
 ![](images/googledownloader.png)
 
 ## How to uninstall
