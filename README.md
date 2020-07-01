@@ -4,13 +4,15 @@ Command line image downloader from Google based on `images-scraper` (https://git
 
 ## How to install
 
-This app requires Nodejs version 12 or higher.
+This app requires Nodejs version 12 or higher. Also it requires Google Chrome browser installed.
 
 `npm install -g @ahmetcetin/image-downloader`
 
 ## How to use
 
-Just run `googledl` in terminal, and follow the instructions. It downloads selected number of images under `downloads/folder` in the current directory. `folder` will be prompted when you run the app.
+Just run `googledl` in terminal, and follow the instructions.
+
+After entering parameters, it will launch Chrome browser and make the search in Google Images, then will download the required number of images to the selected `basefolder/subfolder`. The number of images downloaded might be less than required, as app will download only jpg files.
 
 ![](images/googledownloader.png)
 
