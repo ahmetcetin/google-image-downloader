@@ -119,7 +119,7 @@ const main = async () => {
 
     if (results.length > 0) {
       console.log(chalk.green(`${results.length} results found, downloading jpg files...`));
-      const path = `./downloads/${folder.trim()}`;
+      const path = `${baseFolder}/${folder.trim()}`;
       await mkdirp(path);
 
       for (let result of results) {
