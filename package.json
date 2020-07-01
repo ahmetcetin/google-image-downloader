@@ -1,0 +1,44 @@
+{
+  "name": "google-image-download-cli",
+  "version": "1.0.0",
+  "description": "A CLI app that lets you download images from Google Image search.",
+  "homepage": "https://github.com/ahmetcetin/google-image-downloader#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmetcetin/google-image-downloader.git"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "keywords": [
+    "google",
+    "image",
+    "download",
+    "scraper",
+    "scrape",
+    "photo",
+    "cli"
+  ],
+  "preferGlobal": true,
+  "main": "index.js",
+  "bin": {
+    "googledl": "bin/googledl"
+  },
+  "scripts": {},
+  "author": "Ahmet Cetin",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.3",
+    "clear": "^0.1.0",
+    "figlet": "^1.4.0",
+    "inquirer": "^7.2.0",
+    "md5": "^2.2.1",
+    "mkdirp": "^1.0.4",
+    "puppeteer": "^4.0.1",
+    "superagent": "^5.3.1",
+    "winston": "^3.3.3",
+    "yargs": "^15.3.1"
+  }
+}

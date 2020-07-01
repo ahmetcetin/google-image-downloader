@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+const downloader = require('../index');
+
+const main = async () => {
+  await downloader();
+};
+
+main();
