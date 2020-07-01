@@ -41,7 +41,7 @@ class GoogleScraper {
     }
     const query = `https://www.google.${domain}/search?q=${searchQuery}&source=lnms&tbm=isch&sa=X&tbs=${this.tbs}`;
 
-    logger.info(`Start Google search for "${searchQuery}"`);
+    // logger.info(`Start Google search for "${searchQuery}"`);
     const browser = await puppeteer.launch({
       ...this.puppeteerOptions,
     });
