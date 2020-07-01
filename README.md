@@ -12,6 +12,8 @@ This app requires Nodejs version 12 or higher.
 
 Just run `googledl` in terminal, and follow the instructions. It downloads selected number of images under `downloads/folder` in the current directory. `folder` will be prompted when you run the app.
 
+![](images/googledownloader.png)
+
 ## How to uninstall
 
 `npm uninstall -g @ahmetcetin/image-downloader`
