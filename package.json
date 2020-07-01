@@ -1,6 +1,6 @@
 {
   "name": "@ahmetcetin/image-downloader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A CLI app that lets you download images from Google Image search.",
   "homepage": "https://github.com/ahmetcetin/google-image-downloader#readme",
   "repository": {

@@ -13,12 +13,14 @@ const main = async () => {
   console.log(chalk.yellow(figlet.textSync('Google DL', { horizontalLayout: 'full' })));
 
   try {
-    const { query } = await inquirer.prompt([
+    const { query, baseFolder, qtty } = await inquirer.prompt([
       { type: 'input', name: 'query', message: 'Search term?' },
-    ]);
-
-    const tbs = await inquirer.prompt([
-      { type: 'input', name: 'folder', message: 'Folder name?', default: query },
+      {
+        type: 'input',
+        name: 'baseFolder',
+        message: 'Base directory to download to?',
+        default: './downloads',
+      },
       {
         type: 'input',
         name: 'qtty',
@@ -26,6 +28,10 @@ const main = async () => {
         default: () => 200,
         validate: (val) => Number.isInteger(+val),
       },
+    ]);
+
+    const { folder, domain, ...tbs } = await inquirer.prompt([
+      { type: 'input', name: 'folder', message: 'Sub-folder name?', default: query },
       {
         type: 'list',
         name: 'domain',
@@ -84,11 +90,6 @@ const main = async () => {
         choices: ['color', 'gray'], // 'trans'],
       },
     ]);
-
-    const { folder, domain, qtty } = tbs;
-    delete tbs.folder;
-    delete tbs.domain;
-    delete tbs.qtty;
 
     const { confirmed } = await inquirer.prompt([
       {
