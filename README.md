@@ -2,9 +2,11 @@
 
 Command line image downloader from Google based on `images-scraper` (https://github.com/pevers/images-scraper).
 
-## How to install
+## Requirements
 
 This app requires Nodejs version 12 or higher. Also it requires Google Chrome browser installed.
+
+## How to install
 
 `npm install -g @ahmetcetin/image-downloader`
 
