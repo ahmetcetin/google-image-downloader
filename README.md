@@ -10,6 +10,8 @@ This app requires Nodejs version 12 or higher. Also it requires Google Chrome br
 
 `npm install -g @ahmetcetin/image-downloader`
 
+WARNING for Ubuntu or other Linux distros: If you're on linux, you may get access denied error. If you haven't done it yet, it's better to tell npm to install global packages in your home directory, so that it won't require sudo. In fact, for GoogleDL, as it installs Chromium, even installation with sudo won't help. Please follow the steps described in this page to install it on Linux: https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+
 ## How to use
 
 Just run `googledl` in terminal, and follow the instructions.
