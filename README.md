@@ -1,6 +1,6 @@
 # Google Image Downloader
 
-Command line image downloader from Google based on `images-scraper` (https://github.com/pevers/images-scraper).
+Command line image downloader from Google based on `images-scraper` (https://github.com/pevers/images-scraper) project of Peter Evers.
 
 ## Requirements
 
