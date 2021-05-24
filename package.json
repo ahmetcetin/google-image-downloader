@@ -33,7 +33,7 @@
     "cheerio": "^1.0.0-rc.3",
     "clear": "^0.1.0",
     "figlet": "^1.4.0",
-    "inquirer": "^7.2.0",
+    "inquirer": "^8.1.0",
     "md5": "^2.2.1",
     "mkdirp": "^1.0.4",
     "puppeteer": "^7.0.0",
